@@ -1,17 +1,27 @@
-image:
-  repository: "caymankey/wordpress"
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+namespace: project
+name: wordpress
+
+image: 
+  repository: caymankey/wordpress
+  tag: "latest"
+
+nfs_path_sa: /mnt/IT-Academy/nfs-data/sa2-23-23/abartoshevich/project
+nfs_server_sa: 192.168.37.105
+
+host: wp.k8s-1.sa
+port: 80
 
 service:
+  name: wordpress-front
   type: ClusterIP
-  port: 80
 
-ingress:
-  hostname: wp.k8s-1.sa
+pvc:
+  storage: 2Gi
+  type: nfs 
 
-persistentVolumeClaim:
-  storageSize: 10Gi
+pv:
+  storage: 8Gi
+  type: nfs 
 
 extraEnvs:
   - name: WORDPRESS_DB_HOST
