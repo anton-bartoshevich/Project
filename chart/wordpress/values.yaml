@@ -3,7 +3,7 @@ name: wordpress
 
 image: 
   repository: caymankey/wordpress
-  tag: "latest"
+  tag: ""
 
 nfs_path_sa: /mnt/IT-Academy/nfs-data/sa2-23-23/abartoshevich/project
 nfs_server_sa: 192.168.37.105
