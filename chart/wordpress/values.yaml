@@ -23,12 +23,16 @@ pv:
   storage: 8Gi
   type: nfs 
 
-extraEnvs:
+
+env:
   - name: WORDPRESS_DB_HOST
-    value: 192.168.202.2 
+    value: 192.168.203.3
   - name: WORDPRESS_DB_NAME
-    value: wordpress_db
+    value: bitnami_wordpress
   - name: WORDPRESS_DB_USER
-    value: wordpress_user
+    value: admin
   - name: WORDPRESS_DB_PASSWORD
-    value: wordpress_pass
+    value: wordpress
+    #  - name: WP_DEBUG_LOG
+    #    value: wordpress
+
