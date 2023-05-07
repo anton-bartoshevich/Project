@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   wordpress:
   - apiVersion: v2
+    appVersion: 0.0.5
+    created: "2023-05-07T16:10:58.574503647Z"
+    description: A Helm chart for Kubernetes
+    digest: 8df92c476d3d2765b7d087db291319ea3dd8e69cd2c6038718487ecd298b63a7
+    name: wordpress
+    type: application
+    urls:
+    - https://anton-bartoshevich.github.io/Project/chart/wordpress-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
     appVersion: 0.0.4
-    created: "2023-05-07T14:03:35.79620254Z"
+    created: "2023-05-07T16:10:58.57410254Z"
     description: A Helm chart for Kubernetes
     digest: 5783173804d34426ed51be59c7392198270e105dea4beb48f4890ed120be0642
     name: wordpress
@@ -13,7 +23,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.3
-    created: "2023-05-07T14:03:35.794701733Z"
+    created: "2023-05-07T16:10:58.573704834Z"
     description: A Helm chart for Kubernetes
     digest: 851abc13e9433d0a542135bc82b350ecde26680c45ee6dc0c02389b9516963fe
     name: wordpress
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://anton-bartoshevich.github.io/Project/chart/wordpress-0.0.3.tgz
     version: 0.0.3
-generated: "2023-05-07T14:03:35.794251731Z"
+generated: "2023-05-07T16:10:58.573097525Z"
