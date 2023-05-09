@@ -43,7 +43,7 @@ jobs:
 
     - name: Helm Package
       run: |
-        cd chart
+        cd Helm
         helm package wordpress --version=${{ steps.tag_version.outputs.new_tag }} --app-version=${{ steps.tag_version.outputs.new_tag }}
         cd ..
         helm repo index --url https://anton-bartoshevich.github.io/Project/ --merge index.yaml .
