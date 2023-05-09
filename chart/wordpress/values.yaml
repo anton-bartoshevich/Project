@@ -16,7 +16,7 @@ service:
   type: ClusterIP
 
 pvc:
-  storage: 8Gi
+  storage: 5Gi
   type: nfs 
 
 pv:
