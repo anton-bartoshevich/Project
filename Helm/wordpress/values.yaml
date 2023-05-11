@@ -2,7 +2,7 @@ namespace: project
 name: wordpress
 
 image: 
-  repository: abartoshevich/wordpress
+  repository: caymankey/wordpress
   tag: ""
 
 nfs_path_sa: /mnt/IT-Academy/nfs-data/sa2-23-23/abartoshevich/project
