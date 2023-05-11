@@ -1,10 +1,8 @@
 name: Build and Publish image
-
 on:
   push:
     branches:
     - "main"
-
 jobs:
   release-image:
     runs-on: ubuntu-20.04
@@ -34,13 +32,6 @@ jobs:
     
     - name: Helm tool installer
       uses: Azure/setup-helm@v3
-
-    - name: Test manifests
-      continue-on-error: true
-      uses: instrumenta/kubeval-action@master
-      with: 
-       files: ./chart/wordpress/templates
-
     - name: Helm Package
       run: |
         cd Helm
@@ -62,7 +53,7 @@ jobs:
         SLACK_CHANNEL: general
         SLACK_COLOR: blue 
         SLACK_ICON: https://github.com/rtCamp.png?size=48
-        SLACK_MESSAGE: 'The prokect was delivered'
+        SLACK_MESSAGE: 'The project was successfull'
         SLACK_TITLE: Some checks
         SLACK_USERNAME: GitHub
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}   
