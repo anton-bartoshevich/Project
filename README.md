@@ -1,4 +1,4 @@
 Project
 
 
-![Scheme](Scheme(1).PNG)
+![Scheme](Scheme(1).png)
